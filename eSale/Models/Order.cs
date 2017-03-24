@@ -18,7 +18,23 @@ namespace eSale.Models
         ///客戶名稱
         public string CustName { get; set; }
 
+
+        ///
+        ///業務(員工)代號
+        ///
+        public int EmpId { get; set; }
+
+        ///
+        ///業務(員工姓名)
+        ///
+        public string EmpName { get; set; }
+
         ///訂單日期
         public DateTime? orderDate { get; set; }
+
+        ///
+        ///需要日期
+        ///
+        public DateTime? RequireDdate { get; set; }
     }
 }
