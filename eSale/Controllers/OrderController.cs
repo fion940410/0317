@@ -25,5 +25,28 @@ namespace eSale.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 新增訂單的畫面
+        /// </summary>
+        /// <returns></returns>
+
+        public ActionResult Insertorder()
+        {
+       
+            return View();
+        }
+
+        /// <summary>
+        /// 新稱訂單存檔的action
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        [HttpPost()]
+        public ActionResult Insertorder(Models.Order order)
+        {
+            Models.OrderService orderservice = new Models.OrderService();
+            orderservice.InsertOrder(order);
+            return View("index");
+        }
 	}
 }

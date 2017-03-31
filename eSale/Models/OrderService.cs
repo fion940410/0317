@@ -14,7 +14,13 @@ namespace eSale.Models
         {
                 }
         /// <summary>
-        /// 刪除訂單ById
+        /// 新增訂單ACTION
+        /// </summary>
+        public void InsertOrder()
+        {
+        }
+        /// <summary>
+        /// 刪除訂單By Id
         /// </summary>
         public void DeletOrderById()
         { 
