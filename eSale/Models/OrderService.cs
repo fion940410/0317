@@ -10,13 +10,13 @@ namespace eSale.Models
         /// <summary>
         /// 新增訂單
         /// </summary>
-        public void InsertOrder()
-        {
-                }
+        //public void InsertOrder()
+        //{
+        //        }
         /// <summary>
         /// 新增訂單ACTION
         /// </summary>
-        public void InsertOrder()
+        public void InsertOrder(Order order)
         {
         }
         /// <summary>

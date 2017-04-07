@@ -12,19 +12,17 @@ namespace eSale.Controllers
         // GET: /Order/
         public ActionResult Index()
         {
-            Models.OrderService orderService = new Models.OrderService();
-            var order = orderService.GetOrderById("111");
-            ViewBag.CustId = order.Custld;
-            ViewBag.CustName = order.CustName;
+            //Models.OrderService orderService = new Models.OrderService();
+            //var order = orderService.GetOrderById("111");
+            //ViewBag.CustId = order.Custld;
+
             return View();
         }
-
         public ActionResult Index2(string id)
         {
             ViewBag.id = id;
             return View();
         }
-
         /// <summary>
         /// 新增訂單的畫面
         /// </summary>
@@ -44,9 +42,22 @@ namespace eSale.Controllers
         [HttpPost()]
         public ActionResult Insertorder(Models.Order order)
         {
-            Models.OrderService orderservice = new Models.OrderService();
-            orderservice.InsertOrder(order);
-            return View("index");
+            ViewBag.Desc1 = "我是viewBag";
+            ViewData["desc2"] = "我是viewData";
+            TempData["Desc3"] = "我是tempdata";
+            
+            return RedirectToAction("index");
+        }
+         [HttpGet()]
+        public JsonResult TestJson()
+        {
+            //var result = new Models.Order();
+            //result.Custld = "GSS";
+            //result.CustName = "叡揚";
+
+            var result = new Models.Order() { Custld = "GSS", CustName = "叡揚資訊" };
+            return this.Json(result, JsonRequestBehavior.AllowGet);
+
         }
 	}
 }
