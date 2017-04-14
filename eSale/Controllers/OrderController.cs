@@ -10,12 +10,18 @@ namespace eSale.Controllers
     {
         //
         // GET: /Order/
+
+        /// <summary>
+        /// 訂單管理系統首頁
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             //Models.OrderService orderService = new Models.OrderService();
             //var order = orderService.GetOrderById("111");
             //ViewBag.CustId = order.Custld;
 
+            ViewBag.test = "test";
             return View();
         }
         public ActionResult Index2(string id)
@@ -30,7 +36,8 @@ namespace eSale.Controllers
 
         public ActionResult Insertorder()
         {
-       
+            Models.Order order = new Models.Order();
+            order.CustName = "叡揚資訊";
             return View();
         }
 

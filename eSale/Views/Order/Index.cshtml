@@ -16,6 +16,15 @@
         @ViewData["desc2"]<br/>
         @TempData["Desc3"]
 
+        @ViewBag.test
+
     </div>
 </body>
 </html>
+
+<script type="text/javascript">
+    var msg='@ViewBag.test';
+    alert(msg)
+
+    //alert("test");
+</script>

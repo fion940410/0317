@@ -161,6 +161,7 @@
     <Compile Include="Areas\account\accountAreaRegistration.cs" />
     <Compile Include="Areas\emp\Controllers\Default1Controller.cs" />
     <Compile Include="Areas\emp\empAreaRegistration.cs" />
+    <Compile Include="Controllers\LayoutTestController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -234,6 +235,9 @@
     <Content Include="Views\Order\Index.cshtml" />
     <Content Include="Views\Order\Index2.cshtml" />
     <Content Include="Views\Order\Insertorder.cshtml" />
+    <Content Include="Views\_LayoutPage1.cshtml" />
+    <Content Include="Views\LayoutTest\Index.cshtml" />
+    <Content Include="Views\Shared\_SysDatePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -241,6 +245,7 @@
     <Folder Include="Areas\account\Models\" />
     <Folder Include="Areas\account\Views\Shared\" />
     <Folder Include="Areas\emp\Models\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
