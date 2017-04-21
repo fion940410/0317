@@ -12,19 +12,27 @@
 </head>
 <body>
     <div> 
-        @ViewBag.Desc1<br/>
+        @*@ViewBag.Desc1<br/>
         @ViewData["desc2"]<br/>
         @TempData["Desc3"]
 
-        @ViewBag.test
+        @ViewBag.test*@
 
+        @if (ViewBag.test == "1")
+        {
+            <div>我是一一一一</div>
+        }
+        else
+        { 
+            <div>我是二二二二</div>
+        }
     </div>
 </body>
 </html>
 
-<script type="text/javascript">
+@*<script type="text/javascript">
     var msg='@ViewBag.test';
     alert(msg)
 
     //alert("test");
-</script>
+</script>*@

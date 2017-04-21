@@ -10,6 +10,7 @@ namespace eSale.Models
         ///<summary>
         /// 訂單編號
         /// </summary>
+
         public int OrderDd { get; set; }
 
         ///客戶代號

@@ -21,7 +21,8 @@ namespace eSale.Controllers
             //var order = orderService.GetOrderById("111");
             //ViewBag.CustId = order.Custld;
 
-            ViewBag.test = "test";
+            ViewBag.test = "注意";
+          
             return View();
         }
         public ActionResult Index2(string id)

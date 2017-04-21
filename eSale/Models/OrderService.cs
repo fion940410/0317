@@ -18,19 +18,19 @@ namespace eSale.Models
         /// <summary>
         /// 新增訂單ACTION
         /// </summary>
-        public void InsertOrder(Order order)
+        public void InsertOrder(Models.Order order)
         {
         }
         /// <summary>
         /// 刪除訂單By Id
         /// </summary>
-        public void DeletOrderById()
+        public void DeletOrderById(string id)
         { 
         }
         /// <summary>
         /// 更新訂單
         /// </summary>
-        public void UpdateOrder()
+        public void UpdateOrder(Models.Order order)
         { 
         }
         /// <summary>
@@ -49,7 +49,10 @@ namespace eSale.Models
         /// </summary>
         /// <returns></returns>
         public List<Models.Order> GetOrders()
-        { 
+        {
+            List<Models.Order> result = new List<Order>();
+            result.Add(new Order(){CustId = "Gss", CustName="睿揚",EmpId=1, EmpName = "王小名"})
+
             return new List<Order>(); }
     }
 }
