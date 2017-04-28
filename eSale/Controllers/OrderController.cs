@@ -21,7 +21,10 @@ namespace eSale.Controllers
             //var order = orderService.GetOrderById("111");
             //ViewBag.CustId = order.Custld;
 
-            ViewBag.test = "注意";
+            //ViewBag.test = "注意";
+            Models.OrderService orderSercvice = new Models.OrderService();
+            ViewBag.Data = orderSercvice.GetOrders();
+        
           
             return View();
         }
