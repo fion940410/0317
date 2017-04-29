@@ -51,8 +51,9 @@ namespace eSale.Models
         public List<Models.Order> GetOrders()
         {
             List<Models.Order> result = new List<Order>();
-            result.Add(new Order(){CustId = "Gss", CustName="睿揚",EmpId=1, EmpName = "王小名"})
-
-            return new List<Order>(); }
+            result.Add(new Order() { Custld = "Gss", CustName = "睿揚", EmpId = 1, EmpName = "王小名" });
+            result.Add(new Order() { Custld = "Gss2", CustName = "睿揚2", EmpId = 2, EmpName = "王小名2" });
+            return result;
+                }
     }
 }

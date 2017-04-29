@@ -4,7 +4,7 @@
     ViewBag.Title = "Insertorder";
 }
 
-<h2>Insertorder</h2>
+<h2>Insertorder新增訂單</h2>
 
 
         @ViewBag.Desc1<br />
@@ -31,7 +31,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Custld, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Custld)
+                @Html.TextBox("xxxx")
+                @Html.TextBoxFor(model => model.Custld)
                 @Html.ValidationMessageFor(model => model.Custld)
             </div>
         </div>

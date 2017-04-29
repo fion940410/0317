@@ -14,7 +14,6 @@ namespace eSale.Controllers
         /// <summary>
         /// 訂單管理系統首頁
         /// </summary>
-        /// <returns></returns>
         public ActionResult Index()
         {
             //Models.OrderService orderService = new Models.OrderService();
@@ -22,10 +21,22 @@ namespace eSale.Controllers
             //ViewBag.CustId = order.Custld;
 
             //ViewBag.test = "注意";
-            Models.OrderService orderSercvice = new Models.OrderService();
-            ViewBag.Data = orderSercvice.GetOrders();
-        
-          
+            //Models.OrderService orderSercvice = new Models.OrderService();
+            //ViewBag.Data = orderSercvice.GetOrders();
+
+            List<SelectListItem> custData = new List<SelectListItem>();
+            custData.Add(new SelectListItem()
+            {
+                Text = "瑞陽資訊",
+                Value = "1"
+            });
+            custData.Add(new SelectListItem()
+            {
+                Text = "網軟資訊",
+                Value = "2"
+            });
+            ViewBag.custData = custData;
+                      
             return View();
         }
         public ActionResult Index2(string id)
